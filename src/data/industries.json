@@ -1,0 +1,169 @@
+{
+  "lastUpdated": "2026-01-01",
+  "sourceName": "국세청",
+  "sourceUrl": "https://www.nts.go.kr",
+  "industries": [
+    {
+      "id": "it-freelancer",
+      "name": "IT 프리랜서",
+      "description": "개발, 디자인, 마케팅 등 인적 용역 사업자",
+      "iconId": "monitor",
+      "highlights": [
+        "3.3% 원천징수 신고 내역 확인이 핵심",
+        "인적 용역 소득은 종합소득세 신고 대상",
+        "재택근무 시 통신비·전기세 안분 검토 가능"
+      ],
+      "checklistIds": [
+        "business-card-register",
+        "bookkeeping-type",
+        "yellow-umbrella",
+        "receipt-organize",
+        "withholding-3-3",
+        "home-office-expense",
+        "health-insurance-check",
+        "donation-receipt"
+      ]
+    },
+    {
+      "id": "online-seller",
+      "name": "온라인 판매",
+      "description": "스마트스토어, 쿠팡 등 이커머스 운영자",
+      "iconId": "shopping-cart",
+      "highlights": [
+        "플랫폼별 매출 자료를 통합 정리하는 것이 중요",
+        "오픈마켓 수수료 세금계산서 수취로 매입세액 공제",
+        "해외 사입 시 수입신고필증 및 관세 납부 내역 보관"
+      ],
+      "checklistIds": [
+        "business-card-register",
+        "bookkeeping-type",
+        "yellow-umbrella",
+        "receipt-organize",
+        "platform-revenue-summary",
+        "platform-commission-invoice",
+        "health-insurance-check",
+        "donation-receipt"
+      ]
+    },
+    {
+      "id": "creator",
+      "name": "크리에이터",
+      "description": "유튜브, SNS 채널 운영 및 콘텐츠 제작자",
+      "iconId": "camera",
+      "highlights": [
+        "광고 수익·협찬료는 사업소득으로 신고",
+        "3.3% 원천징수 수입 내역을 연간 합산 확인",
+        "장비·소프트웨어·스튜디오 비용 처리 검토"
+      ],
+      "checklistIds": [
+        "business-card-register",
+        "bookkeeping-type",
+        "yellow-umbrella",
+        "receipt-organize",
+        "withholding-3-3",
+        "platform-revenue-summary",
+        "home-office-expense",
+        "health-insurance-check",
+        "donation-receipt"
+      ]
+    },
+    {
+      "id": "food-beverage",
+      "name": "음식점/카페",
+      "description": "요식업, 베이커리 등 오프라인 매장 운영자",
+      "iconId": "restaurant",
+      "highlights": [
+        "의제매입세액 공제를 위한 면세 농산물 계산서 확보",
+        "배달 앱 수수료 세금계산서 매입 누락 주의",
+        "신용카드 발행 세액공제 한도 확인"
+      ],
+      "checklistIds": [
+        "business-card-register",
+        "bookkeeping-type",
+        "yellow-umbrella",
+        "receipt-organize",
+        "agricultural-deduction",
+        "delivery-app-invoice",
+        "health-insurance-check",
+        "donation-receipt"
+      ]
+    },
+    {
+      "id": "beauty-service",
+      "name": "미용/서비스",
+      "description": "헤어샵, 네일아트, 전문 서비스업 운영자",
+      "iconId": "scissors",
+      "highlights": [
+        "현금 매출 현금영수증 발행 의무 준수",
+        "재료비·소모품 매입 증빙을 꼼꼼히 수취",
+        "직원이 있는 경우 인건비 원천세 신고 필수"
+      ],
+      "checklistIds": [
+        "business-card-register",
+        "bookkeeping-type",
+        "yellow-umbrella",
+        "receipt-organize",
+        "health-insurance-check",
+        "donation-receipt"
+      ]
+    },
+    {
+      "id": "rental",
+      "name": "임대업",
+      "description": "부동산 임대 및 자산 관리 사업자",
+      "iconId": "building",
+      "highlights": [
+        "임대료 수입에 대한 종합소득세 신고 대상",
+        "임대차 계약서 및 임대 수입 증빙 정리 필수",
+        "임대 관련 수선비·관리비를 비용으로 처리 가능"
+      ],
+      "checklistIds": [
+        "bookkeeping-type",
+        "yellow-umbrella",
+        "receipt-organize",
+        "rental-contract",
+        "health-insurance-check",
+        "donation-receipt"
+      ]
+    },
+    {
+      "id": "professional",
+      "name": "전문직",
+      "description": "의사, 변호사, 세무사 등 전문 면허 사업자",
+      "iconId": "briefcase",
+      "highlights": [
+        "성실신고확인 대상 여부 사전 파악",
+        "수임료·진료비 등 수입 누락 없이 집계",
+        "업무 관련 학술·교육 비용 처리 검토 가능"
+      ],
+      "checklistIds": [
+        "business-card-register",
+        "bookkeeping-type",
+        "yellow-umbrella",
+        "receipt-organize",
+        "withholding-3-3",
+        "health-insurance-check",
+        "donation-receipt"
+      ]
+    },
+    {
+      "id": "other",
+      "name": "기타",
+      "description": "그 외 업종의 개인사업자",
+      "iconId": "grid",
+      "highlights": [
+        "업종 코드 확인 후 적합한 세율 적용",
+        "기본 증빙 서류 정리부터 시작",
+        "홈택스에서 나의 과세 유형을 먼저 확인하세요"
+      ],
+      "checklistIds": [
+        "business-card-register",
+        "bookkeeping-type",
+        "yellow-umbrella",
+        "receipt-organize",
+        "health-insurance-check",
+        "donation-receipt"
+      ]
+    }
+  ]
+}

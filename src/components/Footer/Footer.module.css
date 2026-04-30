@@ -1,0 +1,126 @@
+.footer {
+  background-color: var(--color-primary);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .footer {
+  background-color: #0a1220;
+}
+
+.inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-4xl) var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3xl);
+}
+
+@media (min-width: 640px) {
+  .inner {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--space-4xl);
+  }
+}
+
+/* Brand column */
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.logoIcon {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.brandName {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+  color: #fff;
+}
+
+.brandDesc {
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Link columns */
+.linkCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.colTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.footerLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-fast);
+}
+
+.footerLink:hover {
+  color: #fff;
+}
+
+.extIcon {
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+/* Bottom bar */
+.bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 640px) {
+  .bottomBar {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2xl);
+  }
+}
+
+.copyright {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.5);
+  flex-shrink: 0;
+}
+
+.disclaimer {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.4);
+  line-height: var(--leading-normal);
+  max-width: 600px;
+}

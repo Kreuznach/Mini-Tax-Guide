@@ -1,0 +1,112 @@
+{
+  "lastUpdated": "2026-01-01",
+  "sourceName": "국세청 홈택스",
+  "sourceUrl": "https://www.hometax.go.kr",
+  "notice": "각 항목은 일반적인 정보 제공용입니다. 실제 적용 여부는 세무 전문가 또는 국세청을 통해 확인하세요.",
+  "items": [
+    {
+      "id": "business-card-register",
+      "title": "사업용 신용카드 홈택스 등록",
+      "description": "홈택스에 사업용 카드를 등록하면 매입세액 공제 내역을 자동으로 집계할 수 있습니다. 미등록 시 직접 증빙을 수집해야 합니다.",
+      "category": "부가가치세 준비",
+      "industries": ["all"],
+      "weight": 10
+    },
+    {
+      "id": "bookkeeping-type",
+      "title": "장부 기록 의무 유형 확인",
+      "description": "업종·수입 규모에 따라 간편장부 또는 복식부기 의무가 다릅니다. 본인의 기장 의무를 확인하고 해당 방식으로 장부를 준비하세요.",
+      "category": "기장 관리",
+      "industries": ["all"],
+      "weight": 10
+    },
+    {
+      "id": "yellow-umbrella",
+      "title": "노란우산공제 가입 검토",
+      "description": "소기업·소상공인 공제 제도로 납입금액에 따라 최대 500만 원까지 소득공제 혜택을 받을 수 있는지 확인하세요.",
+      "category": "절세 준비",
+      "industries": ["all"],
+      "weight": 8
+    },
+    {
+      "id": "receipt-organize",
+      "title": "매출·비용 증빙 서류 정리",
+      "description": "전자세금계산서 외의 종이 영수증, 간이 영수증, 카드 매출전표 등을 사업 관련 비용과 개인 비용으로 구분해 보관하세요.",
+      "category": "증빙 관리",
+      "industries": ["all"],
+      "weight": 10
+    },
+    {
+      "id": "withholding-3-3",
+      "title": "3.3% 원천징수 내역 대조 확인",
+      "description": "원천징수된 세액과 실제 수령 수입 금액을 대조하여 누락된 신고 건이 없는지 연간 단위로 검토하세요.",
+      "category": "원천세 관리",
+      "industries": ["it-freelancer", "creator", "professional"],
+      "weight": 10
+    },
+    {
+      "id": "platform-revenue-summary",
+      "title": "플랫폼별 매출 자료 통합 정리",
+      "description": "스마트스토어, 쿠팡, 유튜브, 인스타그램 등 각 플랫폼의 정산 내역을 수집하고 월별·분기별로 집계하세요.",
+      "category": "매출 관리",
+      "industries": ["online-seller", "creator"],
+      "weight": 9
+    },
+    {
+      "id": "agricultural-deduction",
+      "title": "의제매입세액 공제 계산서 확보",
+      "description": "면세 농산물·축산물·수산물을 구입한 경우 의제매입세액 공제를 받기 위한 계산서 및 영수증을 수취하고 보관하세요.",
+      "category": "부가가치세 공제",
+      "industries": ["food-beverage"],
+      "weight": 9
+    },
+    {
+      "id": "delivery-app-invoice",
+      "title": "배달 앱 수수료 세금계산서 확인",
+      "description": "배달의민족, 쿠팡이츠, 요기요 등 배달 플랫폼 수수료에 대한 매입 세금계산서가 발행되었는지 확인하세요.",
+      "category": "매입 관리",
+      "industries": ["food-beverage"],
+      "weight": 8
+    },
+    {
+      "id": "rental-contract",
+      "title": "임대차 계약서 및 임대 수입 증빙 보관",
+      "description": "임대료 수취 내역, 임대차 계약서를 정리하고 임대 관련 수선비·관리비 증빙을 사업 비용으로 구분해 보관하세요.",
+      "category": "임대 관리",
+      "industries": ["rental"],
+      "weight": 10
+    },
+    {
+      "id": "platform-commission-invoice",
+      "title": "오픈마켓 판매 수수료 계산서 수취",
+      "description": "쿠팡, 11번가, G마켓 등 오픈마켓 판매 수수료에 대한 세금계산서를 수취하여 매입세액으로 공제받을 수 있는지 확인하세요.",
+      "category": "매입 관리",
+      "industries": ["online-seller"],
+      "weight": 8
+    },
+    {
+      "id": "home-office-expense",
+      "title": "재택근무 관련 비용 안분 검토",
+      "description": "자택에서 업무를 수행하는 경우 통신비, 전기세, 인터넷 요금 등의 업무 사용 비율을 산정하여 비용 처리를 검토하세요.",
+      "category": "비용 처리",
+      "industries": ["it-freelancer", "creator"],
+      "weight": 7
+    },
+    {
+      "id": "health-insurance-check",
+      "title": "지역가입자 건강보험료 납부 확인",
+      "description": "소득이 늘어난 경우 건강보험료가 조정될 수 있습니다. 납부 내역을 확인하고 종합소득세 신고 전 정산 여부를 파악하세요.",
+      "category": "4대 보험",
+      "industries": ["all"],
+      "weight": 7
+    },
+    {
+      "id": "donation-receipt",
+      "title": "기부금 영수증 수집 및 확인",
+      "description": "지정기부금 단체에 기부한 경우 영수증을 수집하고, 전자기부금영수증 사이트에서 발급 내역을 미리 확인하세요.",
+      "category": "세액공제",
+      "industries": ["all"],
+      "weight": 6
+    }
+  ]
+}

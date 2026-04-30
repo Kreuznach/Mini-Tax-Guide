@@ -1,0 +1,291 @@
+.section {
+  padding: var(--space-5xl) 0;
+  background-color: var(--color-surface);
+}
+
+.inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.sourceNote {
+  font-size: var(--text-xs);
+  color: var(--color-on-surface-secondary);
+  line-height: var(--leading-snug);
+}
+
+/* Layout: checklist + score panel */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr 280px;
+  }
+}
+
+/* Checklist area */
+.checklistArea {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+/* Category group */
+.categoryGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.categoryTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-on-surface-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Item list */
+.itemList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.item {
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition:
+    border-color var(--transition-fast),
+    background-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.item:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.itemChecked {
+  border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+  background-color: color-mix(in srgb, var(--color-accent) 4%, var(--color-surface-card));
+}
+
+.itemLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Visually hidden but accessible checkbox */
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Custom checkmark */
+.checkmark {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--color-border);
+  background-color: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition:
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+  color: var(--color-accent);
+}
+
+.itemChecked .checkmark {
+  border-color: var(--color-accent);
+  background-color: color-mix(in srgb, var(--color-accent) 12%, transparent);
+}
+
+.checkbox:focus-visible + .checkmark {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Item text */
+.itemText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  flex: 1;
+}
+
+.itemTitle {
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  color: var(--color-on-surface);
+  line-height: var(--leading-snug);
+  transition: color var(--transition-fast);
+}
+
+.itemChecked .itemTitle {
+  color: var(--color-on-surface-secondary);
+  text-decoration: line-through;
+  text-decoration-color: var(--color-accent);
+}
+
+.itemDesc {
+  font-size: var(--text-sm);
+  color: var(--color-on-surface-secondary);
+  line-height: var(--leading-normal);
+}
+
+/* ── Score Panel ─────────────────────────────── */
+.scorePanel {
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+  text-align: center;
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-xl));
+  box-shadow: var(--shadow-md);
+}
+
+.scorePanelTitle {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+  color: var(--color-on-surface);
+}
+
+/* Circular chart */
+.scoreCircleWrap {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+
+.scoreCircle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.circleBg {
+  fill: none;
+  stroke: var(--color-neutral-200);
+  stroke-width: 3;
+}
+
+.circleFill {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease;
+}
+
+.scoreFill__green { stroke: #16a34a; }
+.scoreFill__yellow { stroke: #d97706; }
+.scoreFill__red { stroke: #dc2626; }
+
+.scoreNumber {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.scoreValue {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-on-surface);
+}
+
+.scoreUnit {
+  font-size: var(--text-sm);
+  color: var(--color-on-surface-secondary);
+}
+
+/* Progress bar */
+.progressBar {
+  width: 100%;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-neutral-200);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+
+.scoreFill__green { background-color: #16a34a; }
+.scoreFill__yellow { background-color: #d97706; }
+.scoreFill__red { background-color: #dc2626; }
+
+/* Score message */
+.scoreMessage {
+  font-size: var(--text-sm);
+  color: var(--color-on-surface-secondary);
+  line-height: var(--leading-normal);
+  text-align: center;
+}
+
+/* Stats */
+.scoreStats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-base);
+  color: var(--color-on-surface-secondary);
+}
+
+.statsValue {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-on-surface);
+}
+
+.statsSeparator {
+  color: var(--color-border);
+}
+
+.statsLabel {
+  font-size: var(--text-sm);
+  margin-left: var(--space-xs);
+}
