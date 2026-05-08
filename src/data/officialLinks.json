@@ -1,21 +1,29 @@
 {
-  "lastUpdated": "2026-01-01",
+  "lastUpdated": "2026-05-08",
   "links": [
     {
-      "id": "nts",
-      "name": "국세청 세무일정",
-      "description": "연간 주요 세무 일정 및 안내문을 확인하세요.",
+      "id": "nts-home",
+      "name": "국세청",
+      "description": "국세청 공식 홈페이지. 세법 안내, 공고, 세무 정보를 확인하세요.",
       "url": "https://www.nts.go.kr",
       "iconId": "building",
       "category": "세무 정보"
     },
     {
       "id": "hometax",
-      "name": "홈택스 (Hometax)",
-      "description": "전자신고, 납부, 증명발급, 사업자등록 등 세무 업무 처리",
+      "name": "홈택스",
+      "description": "전자신고, 납부, 증명발급, 사업자등록 등 세무 업무를 처리하세요.",
       "url": "https://www.hometax.go.kr",
       "iconId": "monitor",
       "category": "전자 신고"
+    },
+    {
+      "id": "nts",
+      "name": "국세청 세무일정",
+      "description": "연간 주요 세무 일정 및 신고·납부 안내문을 확인하세요.",
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2274&cntntsId=7711",
+      "iconId": "calendar",
+      "category": "세무 정보"
     },
     {
       "id": "yellow-umbrella",

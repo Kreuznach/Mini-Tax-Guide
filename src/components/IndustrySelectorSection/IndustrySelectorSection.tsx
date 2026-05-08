@@ -23,7 +23,7 @@ export default function IndustrySelectorSection({
       <div className={styles.inner}>
         <div className={styles.header}>
           <h2 id="industry-title" className="section-title">
-            내 업종 선택
+            업종별 세금 준비사항
           </h2>
           <p className="section-subtitle">
             맞춤형 절세 체크리스트를 보려면 사업 유형을 선택하세요.

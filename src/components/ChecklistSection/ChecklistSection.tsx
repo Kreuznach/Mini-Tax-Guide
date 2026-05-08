@@ -108,7 +108,7 @@ export default function ChecklistSection({
         <div className={styles.header}>
           <div>
             <h2 id="checklist-title" className="section-title">
-              절세 체크리스트
+              절세를 위해 미리 확인할 항목
             </h2>
             <p className="section-subtitle">
               {industryName

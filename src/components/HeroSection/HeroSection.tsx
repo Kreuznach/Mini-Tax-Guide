@@ -53,8 +53,7 @@ export default function HeroSection() {
         <div className={styles.textBlock}>
           <p className={styles.eyebrow}>개인사업자 세금 가이드</p>
           <h1 id="hero-title" className={`${styles.title} section-title`}>
-            세금 신고 직전에 <br className={styles.titleBreak} />
-            당황하지 않게
+            개인사업자 세금 일정·절세 체크리스트
           </h1>
           <p className={styles.subtitle}>
             업종별 세금 일정과 절세 준비사항을

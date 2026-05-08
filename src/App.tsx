@@ -6,7 +6,10 @@ import HeroSection from './components/HeroSection/HeroSection';
 import IndustrySelectorSection from './components/IndustrySelectorSection/IndustrySelectorSection';
 import TaxCalendarSection from './components/TaxCalendarSection/TaxCalendarSection';
 import ChecklistSection from './components/ChecklistSection/ChecklistSection';
+import BookkeepingSection from './components/BookkeepingSection/BookkeepingSection';
 import OfficialLinksSection from './components/OfficialLinksSection/OfficialLinksSection';
+import FaqSection from './components/FaqSection/FaqSection';
+import DisclaimerSection from './components/DisclaimerSection/DisclaimerSection';
 import Footer from './components/Footer/Footer';
 import type { CheckedItems } from './types';
 import styles from './App.module.css';
@@ -67,7 +70,10 @@ export default function App() {
           checkedItems={checkedItems}
           onCheckItem={handleCheckItem}
         />
+        <BookkeepingSection />
         <OfficialLinksSection />
+        <FaqSection />
+        <DisclaimerSection />
       </main>
       <Footer />
     </div>

@@ -16,7 +16,7 @@ export default function OfficialLinksSection() {
         {/* Header */}
         <div className={styles.header}>
           <h2 id="links-title" className="section-title">
-            공식 자료 바로가기
+            공식 자료 링크
           </h2>
           <p className="section-subtitle">
             더 자세한 내용은 정부 공식 사이트에서 확인하세요.
@@ -30,7 +30,7 @@ export default function OfficialLinksSection() {
               <a
                 href={link.url}
                 target="_blank"
-                rel="noreferrer noopener"
+                rel="noopener noreferrer"
                 className={styles.card}
                 aria-label={`${link.name} - 새 탭에서 열기`}
               >

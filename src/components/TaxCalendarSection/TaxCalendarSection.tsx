@@ -47,7 +47,7 @@ export default function TaxCalendarSection({
         <div className={styles.header}>
           <div>
             <h2 id="calendar-title" className="section-title">
-              세금 신고 일정
+              개인사업자가 체갰야 할 주요 세금 일정
             </h2>
             <p className="section-subtitle">
               놓치면 가산세! 월별 주요 신고 일정을 미리 체크하세요.
